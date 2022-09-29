@@ -1,0 +1,81 @@
+1.how to create a file---->
+  1.cat >> <filename>
+  2.touch <f1> <f2>
+  3.vim <f1>
+  4.nano <f1>
+
+  -------for the diffrentiation of above commands read blog for basic followed to advanced linux-----
+
+2.Make directory=folder---->"mkdir"   <-----multiple directories also created follwed by name
+
+3.change directory ==> cd <directory name> or "cd .." <----for reverse 
+
+4.to check present directory---->pwd
+5.copy----> cp file1 file2 
+6.move---->  mv file1 file2
+7.for listing present dir or files---->ls or ls-a(for hidden files)
+8. to create hidden files with any above command = touch .filename
+
+
+9.for delteion of file multiple commands are used depending upon the type of file or data present in the file--------
+ 1.rmdir <directory name> = for empty dir
+ 2.rmdir -p dir1/dir2 =for parent child or sub child deltion
+ 3.rmdir -pv 
+ 4.rm -rf = remove non file or directory
+ 
+
+10. history----> list of no. of commands run by user
+
+                                
+
+ important commands--->
+
+1. lsb_release -a --->name of your machine
+2.hostname--->name of  your server
+3.ifconfig----> to view ip adress.....install net-tools first 
+4.sudo su ---->switch user do --to increase the functionality of your machine
+5.apt install <pkg name> ---> to install downloaded software on your machine
+   apt install git---> for git installation
+
+6.which <pkg or filename> ------> to find where is your file or pakage is located
+  which git
+
+7.wget <downloaded link> ----> to download something from internet-----first download and then install it
+8.whoami --->user name 
+
+9.echo ----> to print something on your screen 
+10. grep ---->to find any word or file
+11. sort--->for sorting of file
+
+12. tree----> this is used for tree like reprenstation of data...you need to first install it then use it
+
+
+for basic to high ---->
+
+1.useradd <username> ----> to create user  in your machine
+2.groupadd <groupname> ---->to add group 
+3. gpasswd -a <username> <groupname> ----> to add  single user in your group
+  gpasswd -M <u1> <u2> <groupname> ------> to add multiple user in your group
+  cat /etc/group----> to see the list of member in a group
+
+4. ln -s <filename> ----> to create a soft link of your file in a desktop
+   ln <f1> <f2> -----> to create a backup file for the original  file
+ 
+5. tar -cvf dir1.tar dir1 ------------> to combine all files in one just like zipping up the file
+
+6. gzip dir1.tar -------> to compress the the file
+7. gunzip dir1.tar.gz ----> to decomprss
+8. tar -xvf file1.tar----> to unzip
+
+
+
+  --ownership of file and directories
+
+1.chmod 777 <file or directory name> ------> to give read, write and execute permission to your user
+2. chown < user> <filename> ----->to transfer the ownership from root to user
+3.chgrp <groupname> <filename> ----->to change the group
+
+
+
+4. 1.vim <filename>.sh ----> to run multi command in one click make them in .sh  file
+   2. --> ./filename --->by running this all command will execute in sorted order
